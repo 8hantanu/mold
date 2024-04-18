@@ -28,6 +28,13 @@
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}" />
     <!-- Mathjax -->
     <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <!-- Mermaid script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            mermaid.initialize({ startOnLoad: true });
+        });
+    </script>
   </head>
   <body a="{{ site.theme_config.appearance | default: "auto" }}">
     <main class="content" aria-label="Content">
